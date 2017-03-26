@@ -1,7 +1,15 @@
+@import "base/mixins";
 @import "base/resets";
-@import "perfil-jovem";
 @import "home";
 @import "header";
 @import "footer";
+
+
+
+// Páginas internas
+
+@import "header_admin";
 @import "login";
 @import "vaga";
+@import "perfil_jovem";
+@import "home_empresa";

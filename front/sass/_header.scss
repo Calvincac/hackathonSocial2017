@@ -1,17 +1,20 @@
 .header{
   width: 100%;
+
   .inicial &{
     position: absolute;
     top: 0;
     left: 0;
     z-index: 10;
   }
+
   .flex-top{
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .main-menu{
     display: flex;
     list-style: none;
@@ -19,6 +22,7 @@
     justify-content: flex-start;
     width: 100%;
     margin-bottom: 0;
+    
     li{
       &:not(:last-child){
         margin-right: 25px;
