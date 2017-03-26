@@ -1,5 +1,5 @@
 .cadastrar-vaga {
-  
+
 }
 
 .vaga{
@@ -40,13 +40,13 @@
     }
 
     .list-itens{
-      
+
       li{
         display: flex;
         align-items: center;
         color: #9d9d9d;
         font-size: 1.2em;
-        
+
         &:before{
           content: "\f111";
           font-family: "FontAwesome";
@@ -68,37 +68,22 @@
       padding-left: 40px;
       margin-left: 30px;
       height: 100%;
-      @include flexbox;
-      align-items: flex-start;
-      justify-content: center;
+      display: flex;
       flex-direction: column;
-
-      .info-salario {
-        font-size: 1.7em;
-        font-weight: lighter;
-
-        .valor {
-          display: block;
-          color: $main-color;
-        }
-      }
-
+      justify-content: center;
       li{
-        margin-bottom: 10px;
-        color: $gray;
-
-        &:not(.info-salario) {
-          padding-left: 25px;
-          position: relative;
-          font-size: 1.2em;
-          font-weight: lighter;
-
-          .fa {
-            position: absolute;
-            left: 0px;
-            font-size: 1.3em;
-            text-align: center;
-            width: 15px;
+        margin-bottom: 15px;
+        color: #9d9d9d;
+        font-size: 17px;
+        .fa{
+          margin-right: 7px;
+        }
+        &.money{
+          strong{
+            color: $main-color;
+            display: block;
+            font-size: 32px;
+            line-height: 30px;
           }
         }
       }
@@ -119,7 +104,7 @@
     flex-direction: column;
     margin-top: 20px;
   }
-  
+
   .item-vaga {
     margin: 15px 0px;
     padding: 15px;
@@ -141,7 +126,7 @@
       flex-direction: column;
       margin: 0 40px;
     }
-    
+
     .main-infos {
       h3 {
         margin: 0px;

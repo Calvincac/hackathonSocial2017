@@ -25,12 +25,8 @@
               </p>
             </div>
           </div>
-          <div class="qtd-indicados">
-            <span class="qtd">10</span>
-            indicados
-          </div>
           <div class="action">
-            <a href="vaga.php">
+            <a v-bind:href="['vaga.php?id=' + v._id]">
               <img src="../images/chevron-right.png" alt="">
             </a>
           </div>
@@ -43,3 +39,4 @@
 <?php
   include('../partials/footer.php');
 ?>
+<script src="../js/home-empresa.js"></script>

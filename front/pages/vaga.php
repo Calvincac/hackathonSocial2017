@@ -2,7 +2,7 @@
   include('../partials/header.php');
 ?>
 
-<main class="main vaga">
+<main class="main vaga" id="vaga" v-model="vaga">
   <?php include('../partials/topo-empresa.php'); ?>
 
   <div class="container">
@@ -10,36 +10,29 @@
       <div class="row">
         <div class="flex-cols">
           <div class="col-xs-12 col-md-8">
-            <h1>Auxiliar de mecânica júnior</h1>
+            <h1>{{ vaga.cargo }}</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              {{ vaga.descricao }}
             </p>
             <h3>Benefícios</h3>
-            <ul class="list-beneficios list-itens">
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Lorem</li>
+            <ul class="list-itens">
+              <li>{{ vaga.beneficios }}</li>
             </ul>
           </div>
           <div class="col-xs-12 col-md-4">
             <ul class="list-skills">
-              <li class="info-salario">
-                <small>Salário</small>
-                <strong class="valor">R$800,00 - R$ 1.200,00</strong>
+              <li class="money">
+                <span>
+                  Salário <strong>{{ vaga.faixa_salarial | currency }}</strong>
+                </span>
               </li>
               <li>
                 <i class="fa fa-clock-o"></i>
-                <span>
-                  8h/dia
-                </span>
+                <span>{{ vaga.carga_horaria }}</span>
               </li>
               <li>
                 <i class="fa fa-map-marker"></i>
-                <span>
-                  R. José de Alencar <br>
-                  no. 1102 <br>
-                  Menino Deus
-                </span>
+                <span>{{ vaga.localizacao }}</span>
               </li>
             </ul>
           </div>
@@ -53,80 +46,13 @@
       <div class="list-candidatos">
         <div class="item-vaga">
           <div class="main-infos">
-            <h3>Nome do candidato</h3>
+            <h3>{{ vaga.aluno.nome }}</h3>
             <div class="description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
+              {{ vaga.aluno.experiencia }}
             </div>
           </div>
-          <div class="qtd-indicados">
-            <span class="qtd">10</span>
-            indicados
-          </div>
           <div class="action">
-            <a href="vaga.php">
-              <img src="../images/chevron-right.png" alt="">
-            </a>
-          </div>
-        </div>
-        <div class="item-vaga">
-          <div class="main-infos">
-            <h3>Nome do candidato</h3>
-            <div class="description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
-            </div>
-          </div>
-          <div class="qtd-indicados">
-            <span class="qtd">10</span>
-            indicados
-          </div>
-          <div class="action">
-            <a href="vaga.php">
-              <img src="../images/chevron-right.png" alt="">
-            </a>
-          </div>
-        </div>
-        <div class="item-vaga">
-          <div class="main-infos">
-            <h3>Nome do candidato</h3>
-            <div class="description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
-            </div>
-          </div>
-          <div class="qtd-indicados">
-            <span class="qtd">10</span>
-            indicados
-          </div>
-          <div class="action">
-            <a href="vaga.php">
-              <img src="../images/chevron-right.png" alt="">
-            </a>
-          </div>
-        </div>
-        <div class="item-vaga">
-          <div class="main-infos">
-            <h3>Nome do candidato</h3>
-            <div class="description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
-            </div>
-          </div>
-          <div class="qtd-indicados">
-            <span class="qtd">10</span>
-            indicados
-          </div>
-          <div class="action">
-            <a href="vaga.php">
+            <a href="perfil-aluno.php">
               <img src="../images/chevron-right.png" alt="">
             </a>
           </div>
@@ -140,3 +66,4 @@
 <?php
   include('../partials/footer.php');
 ?>
+<script src="../js/vaga.js"></script>
