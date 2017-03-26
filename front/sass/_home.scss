@@ -1,3 +1,52 @@
 .home{
   width: 100%;
+
+  .quem-somos {
+    .item {
+      margin-top: 50px;
+      margin-bottom: 50px
+    }
+
+    .title-section {
+      margin: 0px 0px 20px;
+    }
+
+  }
+  
+  .como-funciona {
+    .passos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .passo {
+        margin: 0px 30px;
+
+        img {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .seja-parceiro {
+    background-color: #eee;
+    padding-bottom: 20px;
+    padding-top: 10px;
+
+    .text {
+      .btn  {
+
+      }
+    }
+
+    .contato {
+      margin-top: 10px;
+
+      .number {
+        display: block;
+        font-size: 1.3em;
+      }
+    }
+  }
 }
