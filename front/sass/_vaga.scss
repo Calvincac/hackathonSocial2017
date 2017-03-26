@@ -146,3 +146,26 @@
     }
   }
 }
+
+.list-indicados {
+  .item-vaga {
+    &.item-selecionado {
+      background-color: $main-color;
+      color: #fff;
+
+      h3 {
+        color: white;
+      }
+
+      .btn-indicar {
+        &:hover,
+        &:focus {
+          background-color: $main-color;
+          outline: none;
+          border-color: $main-color;
+          color: white;
+        }
+      }
+    }
+  }
+}
