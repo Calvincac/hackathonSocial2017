@@ -40,85 +40,26 @@
       </div>
     </div>
 
-    <h2>Candidatos</h2>
+    <div class="box-candidatos">
+      <h2>Candidato</h2>
 
-    <div class="list-candidatos">
-      <div class="item-vaga">
-        <div class="main-infos">
-          <h3>Nome do candidato</h3>
-          <div class="description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
+      <div class="list-candidatos">
+        <div class="item-vaga">
+          <div class="main-infos">
+            <h3>{{ vaga.aluno.nome }}</h3>
+            <div class="description">
+              {{ vaga.aluno.experiencia }}
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="item-vaga">
-        <div class="main-infos">
-          <h3>Nome do candidato</h3>
-          <div class="description">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
-            </p>
+          <div class="action">
+            <a href="perfil-aluno.php">
+              <img src="../images/chevron-right.png" alt="">
+            </a>
           </div>
-        </div>
-        <div class="action">
-          <a href="vaga.php" title="" class="btn btn-default">mais informações</a>
-        </div>
-      </div>
-      <div class="item-vaga">
-        <div class="main-infos">
-          <h3>Nome do candidato</h3>
-          <div class="description">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
-            </p>
-          </div>
-        </div>
-        <div class="action">
-          <a href="vaga.php" title="" class="btn btn-default">mais informações</a>
-        </div>
-      </div>
-      <div class="item-vaga">
-        <div class="main-infos">
-          <h3>Nome do candidato</h3>
-          <div class="description">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
-            </p>
-          </div>
-        </div>
-        <div class="action">
-          <a href="vaga.php" title="" class="btn btn-default">mais informações</a>
-        </div>
-      </div>
-      <div class="item-vaga">
-        <div class="main-infos">
-          <h3>Nome do candidato</h3>
-          <div class="description">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
-            </p>
-          </div>
-        </div>
-        <div class="action">
-          <a href="vaga.php" title="" class="btn btn-default">mais informações</a>
         </div>
       </div>
     </div>
+
   </div>
 </main>
 
