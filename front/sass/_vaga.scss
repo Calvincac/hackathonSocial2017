@@ -30,4 +30,46 @@
       }
     }
   }
+  .list-candidatos {
+    background-color: #f1f1f1;
+    @include flexbox;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .item-vaga {
+    border: 1px solid #eee;
+    margin: 15px 0px;
+    padding: 15px;
+    background-color: #fff;
+    @include flexbox;
+    align-items: center;
+    justify-content: space-between;
+
+    .main-infos {
+      h3 {
+        margin: 0px;
+        margin-bottom: 10px;
+      }
+
+      .description {
+        p {
+          margin: 0px;
+        }
+      }
+
+      .qtd-indicados {
+        padding: 0px 20px;
+        @include flexbox;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 200px;
+      }
+
+      .action {
+        margin-top: 20px;
+      }
+    }
+  }
 }
