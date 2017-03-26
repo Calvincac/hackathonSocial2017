@@ -29,7 +29,86 @@
               
             </div>
           </div>
-
+        </div>
+        <div class="item-vaga">
+          <div class="main-infos">
+            <h3>Nome da vaga</h3>
+            <div class="description">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+            </div>
+          </div>
+          <div class="qtd-indicados">
+            <span class="qtd">10</span>
+            indicados
+          </div>
+          <div class="action">
+            <a href="vaga.php" title="" class="btn btn-default">ver vaga</a>
+          </div>
+        </div>
+        <div class="item-vaga">
+          <div class="main-infos">
+            <h3>Nome da vaga</h3>
+            <div class="description">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+            </div>
+          </div>
+          <div class="qtd-indicados">
+            <span class="qtd">10</span>
+            indicados
+          </div>
+          <div class="action">
+            <a href="vaga.php" title="" class="btn btn-default">ver vaga</a>
+          </div>
+        </div>
+        <div class="item-vaga">
+          <div class="main-infos">
+            <h3>Nome da vaga</h3>
+            <div class="description">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+            </div>
+          </div>
+          <div class="qtd-indicados">
+            <span class="qtd">10</span>
+            indicados
+          </div>
+          <div class="action">
+            <a href="vaga.php" title="" class="btn btn-default">ver vaga</a>
+          </div>
+        </div>
+        <div class="item-vaga">
+          <div class="main-infos">
+            <h3>Nome da vaga</h3>
+            <div class="description">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+            </div>
+          </div>
+          <div class="qtd-indicados">
+            <span class="qtd">10</span>
+            indicados
+          </div>
+          <div class="action">
+            <a href="vaga.php" title="" class="btn btn-default">ver vaga</a>
+          </div>
         </div>
       </div>
     </div>
