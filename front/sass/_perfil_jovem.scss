@@ -24,17 +24,17 @@
       margin-bottom: 50px;
 
       .image {
-        width: 200px;
+        width: 140px;
         border: none;
       }
-      
+
       .cont{
         @include flexbox;
         justify-content: flex-start;
         align-items: center;
-        width: calc(100% - 250px);
+        width: calc(100% - 140px);
         flex-wrap: wrap;
-        
+
         figure{
           margin-right: 30px;
           border: none;
@@ -69,11 +69,11 @@
       .block{
         padding-bottom: 15px;
         margin-bottom: 15px;
-        
+
         p{
           margin-bottom: 0;
         }
-        
+
         h2, h3{
           margin-top: 0;
         }

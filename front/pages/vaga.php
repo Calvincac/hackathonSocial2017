@@ -52,7 +52,7 @@
             </div>
           </div>
           <div class="action">
-            <a href="perfil-aluno.php">
+            <a v-bind:href="['perfil-aluno.php?id=' + vaga._id]">
               <img src="../images/chevron-right.png" alt="">
             </a>
           </div>
