@@ -25,13 +25,13 @@ def post_aluno():
     return ('', 204)
 
 @app.route("/vagas", methods = ['GET'])
-def get_vaga():
+def get_vagas():
     collection = db['vagas']
     cursor = collection.find()
     return dumps(cursor)
 
 @app.route("/vagas", methods = ['POST'])
-def post_vaga():
+def post_vagas():
     collection = db['vagas']
     json = request.get_json()
     collection.insert_one(json)
