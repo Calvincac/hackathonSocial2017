@@ -132,25 +132,33 @@
               </div>
               <div class="passos">
                 <div class="passo">
-                  <img src="//placehold.it/100x100" alt="" class="img-responsive">
+                  <div class="image">
+                    <img src="../images/icon-1.png" alt="" class="img-responsive">
+                  </div>
                   <p>
                     A empresa abre a vaga
                   </p>
                 </div>
                 <div class="passo">
-                  <img src="//placehold.it/100x100" alt="" class="img-responsive">
+                  <div class="image">
+                    <img src="../images/icon-2.png" alt="" class="img-responsive">
+                  </div>
                   <p>
                     Pão dos Pobres indica perfis de candidatos
                   </p>
                 </div>
                 <div class="passo">
-                  <img src="//placehold.it/100x100" alt="" class="img-responsive">
+                  <div class="image">
+                    <img src="../images/icon-3.png" alt="" class="img-responsive">
+                  </div>
                   <p>
                     A empresa seleciona
                   </p>
                 </div>
                 <div class="passo">
-                  <img src="//placehold.it/100x100" alt="" class="img-responsive">
+                  <div class="image">
+                    <img src="../images/icon-4.png" alt="" class="img-responsive">
+                  </div>
                   <p>
                     Todos saem ganhando
                   </p>
