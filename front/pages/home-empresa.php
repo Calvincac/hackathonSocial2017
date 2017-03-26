@@ -3,7 +3,7 @@
 ?>
 
 <main class="home-empresa">
-  <?php include('../partials/topo-empresa'); ?>
+  <?php include('../partials/topo-empresa.php'); ?>
 
   <div class="content-page">
     <div class="topo-home-empresa">
