@@ -1,0 +1,37 @@
+.footer{
+  margin-top: 50px;
+  .flex-footer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    .footer-itens{
+      li{
+        a{
+          font-size: 16px;
+        }
+        .fa{
+          margin-right: 5px;
+        }
+      }
+    }
+    .footer-redes{
+      display: flex;
+      li{
+        margin: 0 5px;
+        a{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 5px 6px;background: #666;
+          color: white;
+          border-radius: 4px;
+          font-size: 16px;
+          // &.fb{
+          //   background:
+          // }
+        }
+      }
+    }
+  }
+}

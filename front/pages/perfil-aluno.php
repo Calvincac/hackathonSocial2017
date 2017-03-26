@@ -1,11 +1,17 @@
-<?php 
+<?php
   include('../partials/header.php');
 ?>
 
-<main>
-  
+<main class="main jovem">
+  <div class="container">
+    <div class="content">
+      <div class="top">
+        
+      </div>
+    </div>
+  </div>
 </main>
 
-<?php 
+<?php
   include('../partials/footer.php');
 ?>
