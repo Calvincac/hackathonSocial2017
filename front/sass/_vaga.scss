@@ -1,30 +1,52 @@
 .vaga{
-  background: #f1f1f1;
-  padding: 30px 0;
-
   .content{
-    background: white;
+    background-color: #f8f8f8;
     padding: 35px;
-    border-radius: 5px;
+    border-left: 10px solid $main-color;
 
     h1{
       margin-top: 0;
       margin-bottom: 20px;
+      color: #757575;
+      text-transform: uppercase;
+      font-size: 29px;
+    }
+    p{
+      color: #9d9d9d;
+      @include line-limit(4, 16px);
+    }
+    h3 {
+      margin: 0px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      color: #757575;
+      text-transform: uppercase;
+      font-size: 18px;
     }
     .list-itens{
       li{
         display: flex;
         align-items: center;
+        color: #9d9d9d;
         &:before{
           content: "\f111";
           font-family: "FontAwesome";
           vertical-align: middle;
           font-size: 6px;
           margin-right: 5px;
+          color: #757575;
         }
       }
     }
+    .flex-cols{
+      display: flex;
+      align-items: stretch;
+    }
     .list-skills{
+      border-left: 1px solid #979797;
+      padding-left: 40px;
+      margin-left: 30px;
+      height: 100%;
       li{
         margin-bottom: 10px;
       }
@@ -41,17 +63,11 @@
     border: 1px solid #eee;
     margin: 15px 0px;
     padding: 15px;
-    background-color: #fff;
     @include flexbox;
     align-items: center;
     justify-content: space-between;
 
     .main-infos {
-      h3 {
-        margin: 0px;
-        margin-bottom: 10px;
-      }
-
       .description {
         p {
           margin: 0px;
