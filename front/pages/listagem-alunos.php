@@ -26,7 +26,7 @@
     </div>
 
     <div class="container">
-      <aside class="pull-left col-md-4">
+      <aside class="pull-left pull-left col-md-3">
         <ul class="list-group">
           <li class="list-group-item">
             <a href="listagem-alunos.php" title="Listar alunos">
@@ -45,8 +45,33 @@
           </li>
         </ul>
       </aside>
-      <div class="content col-md-offset-1">
-        
+      <div class="content col-md-9">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Nome do aluno</th>
+              <th>Editar</th>
+              <th>Excluir</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Nome do aluno</td>
+              <td><a href="cadastro-aluno.php" class="btn btn-default" title="">Editar</a></td>
+              <td><a href="javascript: void(0)" class="btn btn-default" title="">Excluir</a></td>
+            </tr>
+            <tr>
+              <td>Nome do aluno</td>
+              <td><a href="cadastro-aluno.php" class="btn btn-default" title="">Editar</a></td>
+              <td><a href="javascript: void(0)" class="btn btn-default" title="">Excluir</a></td>
+            </tr>
+            <tr>
+              <td>Nome do aluno</td>
+              <td><a href="cadastro-aluno.php" class="btn btn-default" title="">Editar</a></td>
+              <td><a href="javascript: void(0)" class="btn btn-default" title="">Excluir</a></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
 
