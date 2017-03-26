@@ -3,15 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Hackathon</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/style.css">
+
   </head>
   <body class="inicial">
     <header class="header">
       <div class="container">
         <div class="flex-top">
-          <img src="//placehold.it/120x70/000/fff" alt="Logo">
+          <div class="box-logo">
+            <img src="../images/logo.png" alt="Logo" class="img-responsive">
+          </div>
           <ul class="main-menu">
             <li>
               <a href="#">Home</a>
@@ -23,7 +33,7 @@
               <a href="#">Lorem Ipsum</a>
             </li>
           </ul>
-          <a href="login.php" class="btn btn-default">Acessar</a>
+          <a href="login.php" class="btn-login btn btn-default">Acessar</a>
         </div>
       </div>
     </header>
@@ -123,12 +133,27 @@
               <div class="passos">
                 <div class="passo">
                   <img src="//placehold.it/100x100" alt="" class="img-responsive">
+                  <p>
+                    A empresa abre a vaga
+                  </p>
                 </div>
                 <div class="passo">
                   <img src="//placehold.it/100x100" alt="" class="img-responsive">
+                  <p>
+                    Pão dos Pobres indica perfis de candidatos
+                  </p>
                 </div>
                 <div class="passo">
                   <img src="//placehold.it/100x100" alt="" class="img-responsive">
+                  <p>
+                    A empresa seleciona
+                  </p>
+                </div>
+                <div class="passo">
+                  <img src="//placehold.it/100x100" alt="" class="img-responsive">
+                  <p>
+                    Todos saem ganhando
+                  </p>
                 </div>
               </div>
             </div>
@@ -143,7 +168,7 @@
               Seja parceiro
             </h2>
             <div class="text text-center">
-              <a href="javascript: void(0)" title="Cadastre-se" class="btn btn-primary">
+              <a href="javascript: void(0)" title="Cadastre-se" class="btn btn-primary btn-lg">
                 Acesse
               </a>
               <p class="contato">

@@ -15,17 +15,38 @@ a {
 label {
   display: block; }
 
+body {
+  font-family: "Roboto", sans-serif; }
+
 .home {
   width: 100%; }
   .home .carousel .item .image {
     height: 80vh;
     background-size: cover;
     background-position: center; }
-  .home .carousel .item .carousel-caption p {
-    font-size: 1.4em;
-    margin-bottom: 30px;
-    color: #fff;
-    text-shadow: 0 0px 5px rgba(0, 0, 0, 0.7); }
+    .home .carousel .item .image::before {
+      content: '';
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3); }
+  .home .carousel .item .carousel-caption {
+    top: 50%;
+    left: 50%;
+    bottom: auto;
+    -webkit-transform: translate(-50%, -50%);
+    -mox-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 800px;
+    max-width: 100%; }
+    .home .carousel .item .carousel-caption p {
+      font-size: 2.1em;
+      color: #fff;
+      text-shadow: 0 0px 5px rgba(0, 0, 0, 0.7); }
   .home .quem-somos .item {
     margin-top: 50px;
     margin-bottom: 50px; }
@@ -38,11 +59,31 @@ label {
     .home .como-funciona .passos .passo {
       margin: 0px 30px; }
       .home .como-funciona .passos .passo img {
-        border-radius: 50%; }
+        border-radius: 50%;
+        margin: 0 auto 10px; }
   .home .seja-parceiro {
-    background-color: #eee;
+    background-color: #f4807a;
     padding-bottom: 20px;
-    padding-top: 10px; }
+    padding-top: 10px;
+    color: #fff; }
+    .home .seja-parceiro .text .btn {
+      background-color: #8bc29c;
+      border-radius: 0px;
+      border-color: #8bc29c;
+      width: 200px;
+      -webkit-transition: all 350ms cubic-bezier(0.7, 0, 0.9, 1);
+      -moz-transition: all 350ms cubic-bezier(0.7, 0, 0.9, 1);
+      -ms-transition: all 350ms cubic-bezier(0.7, 0, 0.9, 1);
+      -o-transition: all 350ms cubic-bezier(0.7, 0, 0.9, 1);
+      transition: all 350ms cubic-bezier(0.7, 0, 0.9, 1); }
+      .home .seja-parceiro .text .btn:hover {
+        background-color: #509766;
+        border-color: #509766;
+        -webkit-transition: all 350ms cubic-bezier(0.7, 0, 0.9, 1);
+        -moz-transition: all 350ms cubic-bezier(0.7, 0, 0.9, 1);
+        -ms-transition: all 350ms cubic-bezier(0.7, 0, 0.9, 1);
+        -o-transition: all 350ms cubic-bezier(0.7, 0, 0.9, 1);
+        transition: all 350ms cubic-bezier(0.7, 0, 0.9, 1); }
     .home .seja-parceiro .contato {
       margin-top: 10px; }
       .home .seja-parceiro .contato .number {
@@ -65,16 +106,36 @@ label {
     display: flex;
     list-style: none;
     padding: 0 30px;
-    justify-content: flex-start;
+    justify-content: flex-end;
     width: 100%;
     margin-bottom: 0; }
     .header .main-menu li:not(:last-child) {
       margin-right: 25px; }
     .header .main-menu li a {
-      font-size: 16px; }
+      font-size: 16px;
+      color: #fff;
+      font-weight: lighter; }
+  .header .btn-login {
+    background-color: #8bc29c;
+    border-radius: 0px;
+    border-color: #8bc29c;
+    -webkit-transition: all 350ms cubic-bezier(0.7, 0, 0.9, 1);
+    -moz-transition: all 350ms cubic-bezier(0.7, 0, 0.9, 1);
+    -ms-transition: all 350ms cubic-bezier(0.7, 0, 0.9, 1);
+    -o-transition: all 350ms cubic-bezier(0.7, 0, 0.9, 1);
+    transition: all 350ms cubic-bezier(0.7, 0, 0.9, 1); }
+    .header .btn-login:hover {
+      background-color: #509766;
+      border-color: #509766;
+      -webkit-transition: all 350ms cubic-bezier(0.7, 0, 0.9, 1);
+      -moz-transition: all 350ms cubic-bezier(0.7, 0, 0.9, 1);
+      -ms-transition: all 350ms cubic-bezier(0.7, 0, 0.9, 1);
+      -o-transition: all 350ms cubic-bezier(0.7, 0, 0.9, 1);
+      transition: all 350ms cubic-bezier(0.7, 0, 0.9, 1); }
 
 .footer {
-  margin-top: 50px; }
+  margin-top: 50px;
+  padding: 20px 0px; }
   .footer .flex-footer {
     display: flex;
     align-items: flex-end;
@@ -100,7 +161,7 @@ label {
 
 .header-admin {
   padding: 10px 0px;
-  background-color: rgba(208, 208, 208, 0.2); }
+  background-color: #f1f1f1; }
   .header-admin .box-header {
     display: -webkit-box;
     display: -moz-box;
@@ -110,14 +171,38 @@ label {
     align-items: center;
     justify-content: space-between; }
   .header-admin .box-logo {
-    max-width: 150px; }
+    padding: 10px 0; }
+    .header-admin .box-logo img {
+      height: 40px; }
+  .header-admin .btn-default {
+    background: transparent; }
+
+.flex-topo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+figure {
+  padding: 4px;
+  border: 2px solid white;
+  border-radius: 10px; }
+  figure img {
+    border-radius: 10px; }
 
 .topo-empresa {
   padding: 50px 0px;
   border-bottom: 1px solid #eee;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  background-image: url("../images/empresas.jpg");
+  background-position: center center; }
   .topo-empresa .logo {
-    max-width: 200px; }
+    max-width: 200px;
+    float: left; }
+  .topo-empresa h2 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px; }
 
 .header-login {
   padding: 10px 0px; }
@@ -207,6 +292,46 @@ label {
         margin-right: 5px; }
     .vaga .content .list-skills li {
       margin-bottom: 10px; }
+  .vaga .list-candidatos {
+    background-color: #f1f1f1;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px; }
+  .vaga .item-vaga {
+    border: 1px solid #eee;
+    margin: 15px 0px;
+    padding: 15px;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .vaga .item-vaga .main-infos h3 {
+      margin: 0px;
+      margin-bottom: 10px; }
+    .vaga .item-vaga .main-infos .description p {
+      margin: 0px; }
+    .vaga .item-vaga .main-infos .qtd-indicados {
+      padding: 0px 20px;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      margin-left: 200px; }
+    .vaga .item-vaga .main-infos .action {
+      margin-top: 20px; }
 
 .jovem {
   background: #f1f1f1;
