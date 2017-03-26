@@ -1,5 +1,13 @@
+.header-login {
+  padding: 10px 0px;
+
+  .box-logo {
+    max-width: 280px;
+  }
+}
+
 .login{
-  background: #f1f1f1;
+  background: white;
   width: 100%;
   display: flex;
   align-items: center;
@@ -7,11 +15,6 @@
   flex-wrap: wrap;
   padding-bottom: 50px;
 
-  .header-login {
-    .box-logo {
-
-    }
-  }
 
   .cont{
     width: 350px;
@@ -43,6 +46,14 @@
       outline: none;
       height: 40px;
       border-color: #e2e2e2;
+
+    }
+    
+    .input-group-addon {
+      background-color: #eee;
+      border-radius: 0px;
+      border: 1px solid #e2e2e2;
+      border-right: 0px
     }
 
     .btn-login{
@@ -58,9 +69,11 @@
       justify-content: center;
       box-shadow: none;
       outline: none;
+      @include transition;
 
       &:hover {
         background-color: $main-color-dark;
+        @include transition;
       }
     }
   }

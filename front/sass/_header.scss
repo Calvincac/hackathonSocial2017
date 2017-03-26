@@ -1,6 +1,10 @@
 .header{
   width: 100%;
 
+  .box-logo {
+
+  }
+
   .inicial &{
     position: absolute;
     top: 0;
@@ -19,17 +23,34 @@
     display: flex;
     list-style: none;
     padding: 0 30px;
-    justify-content: flex-start;
+    justify-content: flex-end;
     width: 100%;
     margin-bottom: 0;
-    
-    li{
-      &:not(:last-child){
+
+    li {
+      &:not(:last-child) {
         margin-right: 25px;
       }
-      a{
+
+      a {
         font-size: 16px;
+        color: #fff;
+        font-weight: lighter;
       }
+    }
+
+  }
+  .btn-login {
+    background-color: $main-color;
+    border-radius: 0px;
+    border-color: $main-color;
+    color: #fff;
+    @include transition;
+
+    &:hover {
+      background-color: $main-color-dark;
+      border-color: $main-color-dark;
+      @include transition;
     }
   }
 }

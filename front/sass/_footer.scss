@@ -1,10 +1,13 @@
 .footer{
   margin-top: 50px;
+  padding: 20px 0px;
+
   .flex-footer{
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     width: 100%;
+
     .footer-itens{
       li{
         a{
