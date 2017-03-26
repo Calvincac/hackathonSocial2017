@@ -5,6 +5,7 @@ import json
 from bson.json_util import dumps
 from flask import Flask, request
 from pymongo import MongoClient
+from bson.objectid import ObjectId
 app = Flask(__name__)
 
 client = MongoClient('mongodb://tuachance1:tuachance1@ds141960.mlab.com:41960/tuachance')
@@ -24,17 +25,31 @@ def post_aluno():
     return ('', 204)
 
 @app.route("/vagas", methods = ['GET'])
-def get_aluno():
+def get_vaga():
     collection = db['vagas']
     cursor = collection.find()
     return dumps(cursor)
 
 @app.route("/vagas", methods = ['POST'])
-def post_aluno():
+def post_vaga():
     collection = db['vagas']
     json = request.get_json()
     collection.insert_one(json)
     return ('', 204)
 
+@app.route('/selecionar/<idaluno>/para/<idvaga>')
+def selecionar_aluno_para_vaga(idaluno, idvaga):
+    collection = db['vagas']
+    cursor_vaga = collection.find_one({'_id': ObjectId(idvaga) })
+    
+    vaga = json.loads(dumps(cursor_vaga))
+    vaga['alunos_recomendados'].remove(idaluno)
+    vaga['alunos_aceitos'].append(idaluno)
+
+    print dumps(vaga['alunos_recomendados'])
+    print dumps(vaga['alunos_aceitos'])
+    
+    return ('', 204)
+
 if __name__ == "__main__":
-    app.run()
+    app.run(port=5001)
