@@ -26,5 +26,23 @@ label{
 }
 
 .btn-action {
-  
+  background-color: $main-color;
+  border-radius: 0px;
+  border-color: $main-color;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  @include transition;
+
+  &:hover {
+    background-color: $main-color-dark;
+    border-color: $main-color-dark;
+    color: white;
+    @include transition;
+  }
+}
+
+.form-control {
+  border-radius: 0px;
+  box-shadow: none;
 }
