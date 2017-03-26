@@ -15,7 +15,7 @@
         <div class="cont">
           <div class="main-infos">
             <div class="right">
-              <h2>{{ vaga.aluno.nome }}, <span>{{ vaga.aluno.idade }}</span></h2>
+              <h2>{{ vaga.aluno.nome | nomeAluno }}, <span>{{ vaga.aluno.idade }}</span></h2>
               <!-- <a href="#" class="edit">Editar perfil</a> -->
             </div>
             <button type="button" v-if="vaga.selecionado" disabled class="btn btn-selecionar selected btn-action btn-lg">

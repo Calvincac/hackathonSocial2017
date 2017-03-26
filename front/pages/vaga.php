@@ -46,7 +46,7 @@
       <div class="list-candidatos">
         <div class="item-vaga">
           <div class="main-infos">
-            <h3>{{ vaga.aluno.nome }}</h3>
+            <h3>{{ vaga.aluno.nome | nomeAluno }}</h3>
             <div class="description">
               {{ vaga.aluno.experiencia }}
             </div>
