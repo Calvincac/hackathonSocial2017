@@ -40,18 +40,34 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <img src="//placehold.it/1920x750" class="img-responsive">
+            <div class="image" style="background-image: url('../images/home/banner-1.jpg')"></div>
             <div class="carousel-caption">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                A oportunidade é a chave para a redução da violência.
               </p>
             </div>
           </div>
           <div class="item">
-            <img src="//placehold.it/1920x750" class="img-responsive">
+            <div class="image" style="background-image: url('../images/home/banner-2.jpg')"></div>
             <div class="carousel-caption">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                “Através do Tua Chance consegui um trabalho de empacotador no Zaffari. Desde lá, já tive duas promoções e hoje tenho um posto no caixa.” - André
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image" style="background-image: url('../images/home/banner-3.jpg')"></div>
+            <div class="carousel-caption">
+              <p>
+                “Contatamos o Jair para contribuir com seu desenvolvimento profissional, mas fomos nós que acabamos aprendendo com ele.” - Elias Pinheiro, diretor de recursos humanos da Gerdau
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="image" style="background-image: url('../images/home/banner-4.jpg')"></div>
+            <div class="carousel-caption">
+              <p>
+                Há mais de 120 anos, o Pão dos Pobres transforma a vida de jovens, crianças e adolescentes em situação vulnerável.
               </p>
             </div>
           </div>
@@ -77,12 +93,7 @@
               </h2>
               <div class="text">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  O jovem egresso da Fase tem a oportunidade de reconstruir o seu futuro. A empresa parceira tem a chance de contribuir com o desenvolvimento de uma sociedade melhor.
                 </p>
               </div>
             </div>
@@ -94,12 +105,7 @@
               </h2>
               <div class="text">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  O projeto Tua Chance une o desejo dos jovens por uma nova perspectiva de vida através do emprego com a sensibilidade das empresas dispostas a contribuir com novos futuros. Os candidatos são jovens atendidos pela fundação pão dos pobres através do programa de oportunidades e direitos, com cursos profissionalizantes e acompanhamento de psicólogos e assistentes sociais.
                 </p>
               </div>
             </div>
@@ -109,6 +115,11 @@
               <h2 class="title-section">
                 Como funciona?
               </h2>
+              <div class="text">
+                <p>
+                  Empresa abre vaga - Pão dos pobres indica perfis de candidatos - Empresa seleciona - Todos ficam felizes
+                </p>
+              </div>
               <div class="passos">
                 <div class="passo">
                   <img src="//placehold.it/100x100" alt="" class="img-responsive">

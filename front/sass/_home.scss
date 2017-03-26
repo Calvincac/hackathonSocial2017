@@ -1,6 +1,25 @@
 .home{
   width: 100%;
 
+  .carousel {
+    .item {
+      .image {
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .carousel-caption {
+        p {
+          font-size: 1.4em;
+          margin-bottom: 30px;
+          color: #fff;
+          text-shadow: 0 0px 5px rgba(0,0,0,0.7);
+        }
+      }
+    }
+  }
+
   .quem-somos {
     .item {
       margin-top: 50px;

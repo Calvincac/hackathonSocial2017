@@ -9,6 +9,7 @@
     
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
   </head>
@@ -30,10 +31,16 @@
         </h1>
         <form>
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="E-mail">
+            <div class="input-group">
+              <i class="input-group-addon fa fa-user"></i>
+              <input type="text" class="form-control" placeholder="E-mail">
+            </div>
           </div>
           <div class="form-group">
-            <input type="password" class="form-control" placeholder="Senha">
+            <div class="input-group">
+              <i class="input-group-addon fa fa-lock"></i>
+              <input type="password" class="form-control" placeholder="Senha">
+            </div>
           </div>
           <button type="submit" class="btn-login">Entrar</button>
         </form>
