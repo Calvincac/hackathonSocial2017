@@ -20,7 +20,7 @@
       <div class="container">
         <div class="flex-top">
           <div class="box-logo">
-            <img src="../images/logo.png" alt="Logo" class="img-responsive">
+            <img src="../images/logo_white.png" alt="Logo" class="img-responsive">
           </div>
           <ul class="main-menu">
             <li>
