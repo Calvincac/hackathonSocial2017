@@ -76,20 +76,15 @@ def post_empresa():
 #     collection.insert_one(json)
 #     return ('', 204)
 
-@app.route('/selecionar/<idaluno>/para/<idvaga>', methods = ['GET'])
+@app.route('/selecionaraluno/<idaluno>/vaga/<idvaga>', methods = ['POST'])
 def selecionar_aluno_para_vaga(idaluno, idvaga):
-    collection = db['vagas']
+    collection = db['empresa']
     cursor_vaga = collection.find_one({'_id': ObjectId(idvaga) })
-    
     vaga = json.loads(dumps(cursor_vaga))
-    vaga['alunos_recomendados'].remove(idaluno)
-    vaga['alunos_aceitos'].append(idaluno)
 
-    print dumps(vaga['alunos_recomendados'])
-    print dumps(vaga['alunos_aceitos'])
-    
-    collection.update_one({ "_id" : ObjectId(idvaga) }, { '$set': { "alunos_recomendados" : dumps(vaga['alunos_recomendados']) }})
-    collection.update_one({ "_id" : ObjectId(idvaga) }, { '$set': { "alunos_aceitos" : dumps(vaga['alunos_aceitos']) }})
+    print dumps(cursor_vaga)
+
+    #collection.update_one({ "_id" : ObjectId(idvaga) }, { '$set': { "alunosAceitos" : dumps(vaga['alunosAceitos']) }})
 
     return ('', 204)
 

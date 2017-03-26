@@ -26,12 +26,12 @@
             <li>
               <a href="#">Home</a>
             </li>
-            <li>
+            <!-- <li>
               <a href="#">Quem somos</a>
             </li>
             <li>
               <a href="#">Lorem Ipsum</a>
-            </li>
+            </li> -->
           </ul>
           <a href="login.php" class="btn-login btn btn-default">Acessar</a>
         </div>

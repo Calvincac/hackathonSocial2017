@@ -44,6 +44,7 @@
     background-color: $main-color;
     border-radius: 0px;
     border-color: $main-color;
+    color: #fff;
     @include transition;
 
     &:hover {
