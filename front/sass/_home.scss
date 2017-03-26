@@ -54,16 +54,25 @@ body {
   
   .como-funciona {
     .passos {
-      display: flex;
-      align-items: center;
+      @include flexbox;
+      align-items: stretch;
       justify-content: center;
 
       .passo {
         margin: 0px 30px;
 
-        img {
+        .image {
+          margin-bottom: 10px;
           border-radius: 50%;
-          margin: 0 auto 10px;
+          background-color: #8bc29c;
+          padding: 25px;
+          width: 130px;
+          height: 130px;
+        }
+
+        img {
+          margin: 0 auto;
+          max-width: 100%;
         }
       }
     }
