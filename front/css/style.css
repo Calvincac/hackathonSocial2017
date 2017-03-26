@@ -15,6 +15,12 @@ a {
 label {
   display: block; }
 
+.no-padding-right {
+  padding-right: 0px; }
+
+.no-padding-left {
+  padding-left: 0px; }
+
 body {
   font-family: "Roboto", sans-serif; }
 
@@ -286,7 +292,10 @@ figure {
 .vaga .content {
   background-color: #f8f8f8;
   padding: 35px;
-  border-left: 10px solid #8bc29c; }
+  border-left: 10px solid #8bc29c;
+  border-top: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee; }
   .vaga .content h1 {
     margin-top: 0;
     margin-bottom: 20px;
@@ -312,7 +321,8 @@ figure {
   .vaga .content .list-itens li {
     display: flex;
     align-items: center;
-    color: #9d9d9d; }
+    color: #9d9d9d;
+    font-size: 1.2em; }
     .vaga .content .list-itens li:before {
       content: "\f111";
       font-family: "FontAwesome";
@@ -324,14 +334,43 @@ figure {
     display: flex;
     align-items: stretch; }
   .vaga .content .list-skills {
-    border-left: 1px solid #979797;
+    border-left: 1px solid #696969;
     padding-left: 40px;
     margin-left: 30px;
-    height: 100%; }
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column; }
+    .vaga .content .list-skills .info-salario {
+      font-size: 1.7em;
+      font-weight: lighter; }
+      .vaga .content .list-skills .info-salario .valor {
+        display: block;
+        color: #8bc29c; }
     .vaga .content .list-skills li {
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      color: #696969; }
+      .vaga .content .list-skills li:not(.info-salario) {
+        padding-left: 25px;
+        position: relative;
+        font-size: 1.2em;
+        font-weight: lighter; }
+        .vaga .content .list-skills li:not(.info-salario) .fa {
+          position: absolute;
+          left: 0px;
+          font-size: 1.3em;
+          text-align: center;
+          width: 15px; }
+.vaga .box-candidatos {
+  margin-top: 50px; }
+  .vaga .box-candidatos > h2 {
+    text-align: center; }
 .vaga .list-candidatos {
-  background-color: #f1f1f1;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -341,31 +380,44 @@ figure {
   flex-direction: column;
   margin-top: 20px; }
 .vaga .item-vaga {
-  border: 1px solid #eee;
   margin: 15px 0px;
   padding: 15px;
+  background-color: #f8f8f8;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   align-items: center;
-  justify-content: space-between; }
-  .vaga .item-vaga .main-infos .description p {
-    margin: 0px; }
-  .vaga .item-vaga .main-infos .qtd-indicados {
-    padding: 0px 20px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
+  justify-content: space-between;
+  border-left: 7px solid #8c8c8c; }
+  .vaga .item-vaga .qtd-indicados {
+    height: 100%;
+    border-left: 1px solid #626262;
+    border-right: 1px solid #626262;
+    padding: 15px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
-    margin-left: 200px; }
-  .vaga .item-vaga .main-infos .action {
-    margin-top: 20px; }
+    text-align: center;
+    flex-direction: column;
+    margin: 0 40px; }
+  .vaga .item-vaga .main-infos h3 {
+    margin: 0px;
+    margin-bottom: 10px;
+    color: #626262;
+    text-transform: uppercase;
+    font-size: 22px; }
+  .vaga .item-vaga .main-infos .description p {
+    margin: 0px;
+    color: #a1a1a1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-height: 16px;
+    max-height: 64px; }
 
 .jovem {
   background: #f1f1f1;
@@ -477,5 +529,10 @@ figure {
     -webkit-line-clamp: 4;
     line-height: 16px;
     max-height: 64px; }
+
+.cadastrar-vaga {
+  background-color: white; }
+  .cadastrar-vaga .content {
+    background-color: #f8f8f8; }
 
 /*# sourceMappingURL=style.css.map */

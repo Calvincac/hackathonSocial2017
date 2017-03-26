@@ -15,7 +15,7 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             <h3>Benefícios</h3>
-            <ul class="list-itens">
+            <ul class="list-beneficios list-itens">
               <li>Lorem ipsum</li>
               <li>Lorem ipsum dolor sit amet</li>
               <li>Lorem</li>
@@ -23,17 +23,23 @@
           </div>
           <div class="col-xs-12 col-md-4">
             <ul class="list-skills">
-              <li>
-                <i class="fa fa-money"></i>
-                <span><strong>Faixa salarial:</strong> R$800,00 - R$ 1.200,00</span>
+              <li class="info-salario">
+                <small>Salário</small>
+                <strong class="valor">R$800,00 - R$ 1.200,00</strong>
               </li>
               <li>
                 <i class="fa fa-clock-o"></i>
-                <span><strong>Carga horária:</strong> 40h semanais</span>
+                <span>
+                  8h/dia
+                </span>
               </li>
               <li>
-                <i class="fa fa-globe"></i>
-                <span><strong>Localização:</strong> Porto Alegre - RS</span>
+                <i class="fa fa-map-marker"></i>
+                <span>
+                  R. José de Alencar <br>
+                  no. 1102 <br>
+                  Menino Deus
+                </span>
               </li>
             </ul>
           </div>
@@ -41,85 +47,93 @@
       </div>
     </div>
 
-    <h2>Candidatos</h2>
+    <div class="box-candidatos">
+      <h2>Candidato</h2>
 
-    <div class="list-candidatos">
-      <div class="item-vaga">
-        <div class="main-infos">
-          <h3>Nome do candidato</h3>
-          <div class="description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
-          </div>
-        </div>
-      </div>
-      <div class="item-vaga">
-        <div class="main-infos">
-          <h3>Nome do candidato</h3>
-          <div class="description">
-            <p>
+      <div class="list-candidatos">
+        <div class="item-vaga">
+          <div class="main-infos">
+            <h3>Nome do candidato</h3>
+            <div class="description">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
               consequat.
-            </p>
+            </div>
+          </div>
+          <div class="qtd-indicados">
+            <span class="qtd">10</span>
+            indicados
+          </div>
+          <div class="action">
+            <a href="vaga.php">
+              <img src="../images/chevron-right.png" alt="">
+            </a>
           </div>
         </div>
-        <div class="action">
-          <a href="vaga.php" title="" class="btn btn-default">mais informações</a>
-        </div>
-      </div>
-      <div class="item-vaga">
-        <div class="main-infos">
-          <h3>Nome do candidato</h3>
-          <div class="description">
-            <p>
+        <div class="item-vaga">
+          <div class="main-infos">
+            <h3>Nome do candidato</h3>
+            <div class="description">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
               consequat.
-            </p>
+            </div>
+          </div>
+          <div class="qtd-indicados">
+            <span class="qtd">10</span>
+            indicados
+          </div>
+          <div class="action">
+            <a href="vaga.php">
+              <img src="../images/chevron-right.png" alt="">
+            </a>
           </div>
         </div>
-        <div class="action">
-          <a href="vaga.php" title="" class="btn btn-default">mais informações</a>
-        </div>
-      </div>
-      <div class="item-vaga">
-        <div class="main-infos">
-          <h3>Nome do candidato</h3>
-          <div class="description">
-            <p>
+        <div class="item-vaga">
+          <div class="main-infos">
+            <h3>Nome do candidato</h3>
+            <div class="description">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
               consequat.
-            </p>
+            </div>
+          </div>
+          <div class="qtd-indicados">
+            <span class="qtd">10</span>
+            indicados
+          </div>
+          <div class="action">
+            <a href="vaga.php">
+              <img src="../images/chevron-right.png" alt="">
+            </a>
           </div>
         </div>
-        <div class="action">
-          <a href="vaga.php" title="" class="btn btn-default">mais informações</a>
-        </div>
-      </div>
-      <div class="item-vaga">
-        <div class="main-infos">
-          <h3>Nome do candidato</h3>
-          <div class="description">
-            <p>
+        <div class="item-vaga">
+          <div class="main-infos">
+            <h3>Nome do candidato</h3>
+            <div class="description">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
               consequat.
-            </p>
+            </div>
           </div>
-        </div>
-        <div class="action">
-          <a href="vaga.php" title="" class="btn btn-default">mais informações</a>
+          <div class="qtd-indicados">
+            <span class="qtd">10</span>
+            indicados
+          </div>
+          <div class="action">
+            <a href="vaga.php">
+              <img src="../images/chevron-right.png" alt="">
+            </a>
+          </div>
         </div>
       </div>
     </div>
+
   </div>
 </main>
 
