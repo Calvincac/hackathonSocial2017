@@ -1,0 +1,32 @@
+.home-empresa {
+  .content-page {
+
+  }
+
+  .topo-home-empresa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .title-page {
+    margin: 0px;
+  }
+
+  .list-vagas {
+    background-color: #e1e1e1;
+  }
+
+  .item-vaga {
+    border: 1px solid #eee;
+    margin: 15px 0px;
+    padding: 15px;
+    background-color: #fff;
+
+    .main-infos {
+      h3 {
+        margin: 0px;
+      }
+    }
+  }
+}

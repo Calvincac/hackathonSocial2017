@@ -1,4 +1,4 @@
-    <footer>
+    <footer class="footer-admin">
       <div class="container"></div>
     </footer>
     
