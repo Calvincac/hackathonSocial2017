@@ -10,7 +10,7 @@
       <div class="topo-home-empresa">
         <h2 class="title-page">Vagas</h2>
 
-        <a href="#" title="Cadastrar página" class="btn btn-primary pull-right">
+        <a href="cadastro-vagas.php" title="Cadastrar página" class="btn btn-primary pull-right">
           Cadastra vaga
         </a>
       </div>
@@ -24,6 +24,12 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat.
               </p>
             </div>
@@ -33,7 +39,9 @@
             indicados
           </div>
           <div class="action">
-            <a href="vaga.php" title="" class="btn btn-default">ver vaga</a>
+            <a href="vaga.php">
+              <img src="../images/chevron-right.png" alt="">
+            </a>
           </div>
         </div>
       </div>
