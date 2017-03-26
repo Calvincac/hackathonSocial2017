@@ -445,51 +445,90 @@ figure {
     line-height: 16px;
     max-height: 64px; }
 
-.jovem {
-  background: #f1f1f1;
-  padding: 30px 0; }
-  .jovem .content {
-    background: white;
-    padding: 35px;
-    border-radius: 5px; }
-    .jovem .content .top {
+.jovem .content {
+  background: #f8f8f8;
+  padding: 35px;
+  border-radius: 5px; }
+  .jovem .content .btn-selecionar.selected {
+    border-color: #b3b3b3;
+    background-color: #b3b3b3; }
+    .jovem .content .btn-selecionar.selected:hover {
+      border-color: #b3b3b3;
+      background-color: #b3b3b3; }
+  .jovem .content .top {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px; }
+    .jovem .content .top .image {
+      width: 200px;
+      border: none; }
+    .jovem .content .top .cont {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
-      margin-bottom: 50px; }
-      .jovem .content .top .cont {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center; }
-        .jovem .content .top .cont figure {
-          margin-right: 30px; }
-        .jovem .content .top .cont h2 {
-          margin: 0; }
-      .jovem .content .top .btn-select {
-        height: auto;
-        padding: 7px 10px;
-        background: #0079bf;
-        border-radius: 5px;
-        color: white;
-        text-transform: uppercase;
-        border: 0; }
-    .jovem .content .middle .block {
-      border-bottom: 1px solid #f1f1f1;
-      padding-bottom: 15px;
-      margin-bottom: 15px; }
-      .jovem .content .middle .block p {
-        margin-bottom: 0; }
-      .jovem .content .middle .block h2, .jovem .content .middle .block h3 {
-        margin-top: 0; }
-    .jovem .content .middle .list-itens li {
+      width: calc(100% - 250px);
+      flex-wrap: wrap; }
+      .jovem .content .top .cont figure {
+        margin-right: 30px;
+        border: none; }
+      .jovem .content .top .cont h2 {
+        margin: 0; }
+    .jovem .content .top .main-infos {
+      width: 100%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
       display: flex;
-      align-items: center; }
-      .jovem .content .middle .list-itens li:before {
-        content: "\f111";
-        font-family: "FontAwesome";
-        vertical-align: middle;
-        font-size: 6px;
-        margin-right: 5px; }
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px; }
+    .jovem .content .top .btn-select {
+      height: auto;
+      padding: 7px 10px;
+      background: #0079bf;
+      border-radius: 5px;
+      color: white;
+      text-transform: uppercase;
+      border: 0; }
+  .jovem .content .middle .block {
+    padding-bottom: 15px;
+    margin-bottom: 15px; }
+    .jovem .content .middle .block p {
+      margin-bottom: 0; }
+    .jovem .content .middle .block h2, .jovem .content .middle .block h3 {
+      margin-top: 0; }
+  .jovem .content .middle .list-itens li {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center; }
+    .jovem .content .middle .list-itens li:before {
+      content: "\f111";
+      font-family: "FontAwesome";
+      vertical-align: middle;
+      font-size: 6px;
+      margin-right: 5px; }
+  .jovem .content .more-about {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap; }
 
 .home-empresa .topo-home-empresa {
   display: flex;
