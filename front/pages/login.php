@@ -7,38 +7,19 @@
     <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
-    <div class="top">
-      <div class="container">
-        <div class="flex-top">
-          <img src="//placehold.it/120x70" alt="Logo">
-          <!-- <a href="#" class="btn btn-default">Sair</a> -->
-        </div>
-      </div>
-    </div>
-
-    <div class="content">
-      <div class="container">
-        <form action="#" method="post" class="col-xs-12 col-md-6 col-md-offset-3">
-          <h1 class="text-center">Login</h1>
+    <div class="login">
+      <div class="cont">
+        <figure class="logo">
+          <img src="//placehold.it/250x100" alt="Logo">
+        </figure>
+        <form>
           <div class="form-group">
-            <label for="email-login" class="">
-              Email
-            </label>
-            <input class="form-control" type="email" name="email"></input>
+            <input type="text" class="form-control" placeholder="E-mail">
           </div>
           <div class="form-group">
-            <label for="password-login">
-              Senha
-            </label>
-            <input type="password" name="password" class="form-control">
+            <input type="password" class="form-control" placeholder="Senha">
           </div>
-          <div class="form-group field-submit">
-            <a href="listagem-alunos.php"  class="btn btn-primary">Entrar</button>
-            <a href="#" class="btn btn-default pull-right">Cadastrar empresa</a>
-          </div>
-          <div class="form-group text-center">
-            <a href="#" title="">Esqueceu sua senha?</a>
-          </div>
+          <button type="submit" class="btn-login">Entrar</button>
         </form>
       </div>
     </div>

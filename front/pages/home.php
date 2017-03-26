@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/style.css">
   </head>
-  <body>
+  <body class="inicial">
     <header class="header">
       <div class="container">
         <div class="flex-top">
@@ -23,7 +23,7 @@
               <a href="#">Lorem Ipsum</a>
             </li>
           </ul>
-          <a href="#" class="btn btn-default">Acessar</a>
+          <a href="login.php" class="btn btn-default">Acessar</a>
         </div>
       </div>
     </header>
