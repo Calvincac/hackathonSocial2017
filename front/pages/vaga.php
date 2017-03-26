@@ -16,9 +16,7 @@
             </p>
             <h3>Benefícios</h3>
             <ul class="list-itens">
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Lorem</li>
+              <li>{{ vaga.beneficios }}</li>
             </ul>
           </div>
           <div class="col-xs-12 col-md-4">
@@ -30,11 +28,11 @@
               </li>
               <li>
                 <i class="fa fa-clock-o"></i>
-                <span>40h semanais</span>
+                <span>{{ vaga.carga_horaria }}</span>
               </li>
               <li>
                 <i class="fa fa-map-marker"></i>
-                <span>Porto Alegre - RS</span>
+                <span>{{ vaga.localizacao }}</span>
               </li>
             </ul>
           </div>
