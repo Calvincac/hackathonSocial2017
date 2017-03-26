@@ -6,6 +6,16 @@
   transition: $elems $duration $function-time;
 }
 
+@mixin line-limit($lines, $size){
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+  line-height: $size;
+  max-height: $lines * $size;
+}
+
 @mixin transition-property($elems...) {
   -webkit-transition-property: $elems;
   -moz-transition-property: $elems;
@@ -36,7 +46,7 @@
   &:-ms-input-placeholder { @content }
 }
 
-@mixin filter($filters...) { 
+@mixin filter($filters...) {
   -webkit-filter: $filters;
   -moz-filter: $filters;
   -ms-filter: $filters;
@@ -88,7 +98,7 @@
 @mixin custom-col($width, $point: 'all') {
   @if $point == 'all' {
     width: $width;
-  } 
+  }
   @else {
     @include media($point){
       width: $width;

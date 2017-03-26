@@ -67,13 +67,7 @@
         p {
           margin: 0px;
           color: #a1a1a1;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
-          -webkit-line-clamp: 4;
-          line-height: 16px;
-          max-height: 4 * 16px;
+          @include line-limit(4, 16px);
         }
       }
     }
