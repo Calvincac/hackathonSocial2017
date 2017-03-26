@@ -67,6 +67,82 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+
+      <div class="container">
+        <div class="quem-somos">
+          <div class="row">
+            <div class="item col-xs-12 col-md-8 col-md-offset-2 text-center">
+              <h2 class="title-section">
+                Chance para quem?
+              </h2>
+              <div class="text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="item col-xs-12 col-md-8 col-md-offset-2 text-center">
+              <h2 class="title-section">
+                O que é?
+              </h2>
+              <div class="text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="item como-funciona col-xs-12 col-md-8 col-md-offset-2 text-center">
+              <h2 class="title-section">
+                Como funciona?
+              </h2>
+              <div class="passos">
+                <div class="passo">
+                  <img src="//placehold.it/100x100" alt="" class="img-responsive">
+                </div>
+                <div class="passo">
+                  <img src="//placehold.it/100x100" alt="" class="img-responsive">
+                </div>
+                <div class="passo">
+                  <img src="//placehold.it/100x100" alt="" class="img-responsive">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box-parceiros">
+          <div class="parceiros">
+            
+          </div>
+          <div class="seja-parceiro col-md-4 col-md-offset-4">
+            <h2 class="title-section text-center">
+              Seja parceiro
+            </h2>
+            <div class="text text-center">
+              <a href="javascript: void(0)" title="Cadastre-se" class="btn btn-primary">
+                Acesse
+              </a>
+              <p class="contato">
+                Entre em contato
+                <span class="number">(51) 9999-9999</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">

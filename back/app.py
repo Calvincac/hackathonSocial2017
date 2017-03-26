@@ -44,11 +44,7 @@ def selecionar_aluno_para_vaga(idaluno, idvaga):
     
     vaga = json.loads(dumps(cursor_vaga))
     vaga['alunos_recomendados'].remove(idaluno)
-    vaga['alunos_aceitos'].append(idaluno)
-
-    print dumps(vaga['alunos_recomendados'])
-    print dumps(vaga['alunos_aceitos'])
-    
+    vaga['alunos_aceitos'].append(idaluno)   
     return ('', 204)
 
 if __name__ == "__main__":
