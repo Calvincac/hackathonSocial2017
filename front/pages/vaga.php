@@ -46,13 +46,13 @@
       <div class="list-candidatos">
         <div class="item-vaga">
           <div class="main-infos">
-            <h3>{{ vaga.aluno.nome }}</h3>
+            <h3>{{ vaga.aluno.nome | nomeAluno }}</h3>
             <div class="description">
               {{ vaga.aluno.experiencia }}
             </div>
           </div>
           <div class="action">
-            <a href="perfil-aluno.php">
+            <a v-bind:href="['perfil-aluno.php?id=' + vaga._id]">
               <img src="../images/chevron-right.png" alt="">
             </a>
           </div>

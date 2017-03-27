@@ -2,11 +2,11 @@
   include('../partials/header.php');
 ?>
 
-<main class="main vaga" id="vaga" v-model="vaga">
+<main class="main vaga" id="vaga">
   <?php include('../partials/topo-empresa.php'); ?>
 
-  <div class="container">
-    <div class="content">
+  <div class="container" >
+    <div class="content" v-model="vaga">
       <div class="row">
         <div class="flex-cols">
           <div class="col-xs-12 col-md-8">
@@ -41,40 +41,14 @@
     </div>
 
     <div class="box-candidatos">
-      <h2>Candidato</h2>
+      <h2>Alunos</h2>
 
       <div class="list-candidatos list-indicados">
-        <div class="item-vaga">
-          <div class="main-infos">
-            <h3>{{ vaga.aluno.nome }}</h3>
+        <div class="item-vaga" v-for="a in alunos" v-on:click="changeSelected">
+          <div class="main-infos" :data-id="a._id">
+            <h3>{{ a.nome | nomeAluno }}</h3>
             <div class="description">
-              {{ vaga.aluno.experiencia }}
-            </div>
-          </div>
-          <div class="action">
-            <button type="submit" class="btn btn-indicar btn-action btn-default" data-text-selecionar="Indicar" data-text-selecionado="Indicado">
-              Indicar
-            </button>
-          </div>
-        </div>
-        <div class="item-vaga">
-          <div class="main-infos">
-            <h3>{{ vaga.aluno.nome }}</h3>
-            <div class="description">
-              {{ vaga.aluno.experiencia }}
-            </div>
-          </div>
-          <div class="action">
-            <button type="submit" class="btn btn-indicar btn-action btn-default" data-text-selecionar="Indicar" data-text-selecionado="Indicado">
-              Indicar
-            </button>
-          </div>
-        </div>
-        <div class="item-vaga">
-          <div class="main-infos">
-            <h3>{{ vaga.aluno.nome }}</h3>
-            <div class="description">
-              {{ vaga.aluno.experiencia }}
+              {{ a.experiencia }}
             </div>
           </div>
           <div class="action">
@@ -99,7 +73,7 @@
 
     var $parentItem = $(this).closest('.item-vaga');
     var siblings = $parentItem.siblings();
-    
+
     siblings.removeClass('item-selecionado');
 
     if ($parentItem.hasClass('item-selecionado')) {
@@ -107,9 +81,10 @@
     } else {
       $(this).html($(this).data('text-selecionado'));
     }
-    
+
     $parentItem.toggleClass('item-selecionado');
 
 
   });
 </script>
+<script src="../js/vaga-pao.js"></script>

@@ -6,15 +6,6 @@ var homeEmpresas = new Vue({
   created: function(){
     this.getAccessToken();
   },
-  filters: {
-    currency: function(_valor){
-      if (_valor && _valor != '') {
-          return 'R$ ' + parseFloat(_valor).toFixed(2).replace('.', ',');
-      } else {
-          return '';
-      }
-    }
-  },
   methods: {
     getAccessToken: function(){
       var self = this;
@@ -66,6 +57,18 @@ var homeEmpresas = new Vue({
       if (!results) return null;
       if (!results[2]) return '';
       return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+  },
+  filters: {
+    nomeAluno: function(nome){
+      return nome.split(' ')[0];
+    },
+    currency: function(_valor){
+      if (_valor && _valor != '') {
+          return 'R$ ' + parseFloat(_valor).toFixed(2).replace('.', ',');
+      } else {
+          return '';
+      }
     }
   }
 });
