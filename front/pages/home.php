@@ -61,7 +61,7 @@
             <div class="image" style="background-image: url('../images/home/banner-2.jpg')"></div>
             <div class="carousel-caption">
               <p>
-                “Através do Tua Chance consegui um trabalho de empacotador no Zaffari. Desde lá, já tive duas promoções e hoje tenho um posto no caixa.” - André
+                “Através do Tua Chance consegui um trabalho de empacotador no nosso mercado. Desde lá, já tive duas promoções e hoje tenho um posto no caixa.” - André
               </p>
             </div>
           </div>
@@ -69,7 +69,7 @@
             <div class="image" style="background-image: url('../images/home/banner-3.jpg')"></div>
             <div class="carousel-caption">
               <p>
-                “Contatamos o Jair para contribuir com seu desenvolvimento profissional, mas fomos nós que acabamos aprendendo com ele.” - Elias Pinheiro, diretor de recursos humanos da Gerdau
+                “Contatamos o Jair para contribuir com seu desenvolvimento profissional, mas fomos nós que acabamos aprendendo com ele.” - Elias Pinheiro
               </p>
             </div>
           </div>
